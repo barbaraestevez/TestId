@@ -19,7 +19,7 @@ const PORT = 8088;
 
 server.listen(PORT,()=>{
     console.log('listening on port: '+ PORT);
-})
+});
 
 
 //-------------------
@@ -55,5 +55,32 @@ server.listen(PORT,()=>{
 //   const nifEjemplo = "12345678Z";
 //   const resultado = analizarNIF(nifEjemplo);
 //   console.log(resultado);
-
 //-------------------
+
+
+//--------CÓDIGO DE RICHARD------------
+// const http= require ('http');
+// const host = 'localhost';
+// const port = 8088;
+// // const fs = require('fs').promises;
+
+// const server = http.createServer((req, resp)=> {
+//     const URL = req.url.split('/');
+//     const NIF = URL [1];
+
+//     if(NIF && /^[0-9]{8}[a-z,A-Z]$/.test(NIF)) {
+//         resp.writeHead(200,{'Content-Type':'text/plain'});
+//         resp.end('TRUE');
+//     }
+//     else {
+//         resp.writeHead(400,{'Content-Type':'text/plain'});
+//         resp.end('FALSE')
+//     }
+// });
+
+// const PORT = 8088;
+
+// server.listen(PORT,()=>{
+//     console.log('listening on port: '+ PORT);
+// });
+//--------FIN CÓDIGO DE RICHARD------------
